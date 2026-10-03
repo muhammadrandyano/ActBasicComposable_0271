@@ -118,6 +118,24 @@ fun TataLetakBoxColumnRow(modifier: Modifier) {
                 .background(color = Color.Yellow),
             contentAlignment = Alignment.Center
         ) {
+            Column {
+                Row(
+                    modifier = modifier.fillMaxWidth(),
+                    horizontalArrangement = Arrangement.SpaceEvenly
+                ) {
+                    Text(text = "Col_1_Row_1_Komponen1")
+                    Text(text = "Col_1_Row_1_Komponen2")
+                    Text(text = "Col_1_Row_1_Komponen3")
+                }
+                Row(
+                    modifier = modifier.fillMaxWidth(),
+                    horizontalArrangement = Arrangement.SpaceEvenly
+                ) {
+                    Text(text = "Col_1_Row_1_Komponen1")
+                    Text(text = "Col_1_Row_1_Komponen2")
+                    Text(text = "Col_1_Row_1_Komponen3")
+                }
+            }
         }
     }
 }
