@@ -133,3 +133,9 @@ fun FotoProfil() {
         contentScale = ContentScale.Crop
     )
 }
+
+@Preview(showBackground = true, showSystemUi = true)
+@Composable
+fun TugasPreview() {
+    Tugas()
+}
