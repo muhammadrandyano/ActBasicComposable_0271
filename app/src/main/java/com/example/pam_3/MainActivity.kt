@@ -12,3 +12,11 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.core.view.WindowCompat.enableEdgeToEdge
 import com.example.pam_3.ui.theme.PAM_3Theme
+
+class MainActivity : ComponentActivity() {
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContent {
+        }
+    }
+}
