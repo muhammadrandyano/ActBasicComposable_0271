@@ -38,5 +38,20 @@ fun Tugas(modifier: Modifier = Modifier) {
             modifier = Modifier.fillMaxSize(),
             contentScale = ContentScale.Crop
         )
+
+        // Overlay Gradient Gelap/Transparan agar teks tetap terbaca
+        Box(
+            modifier = Modifier
+                .fillMaxSize()
+                .background(
+                    Brush.verticalGradient(
+                        colors = listOf(
+                            Color(0xCC000000),
+                            Color(0x33000000),
+                            Color(0xCC000000)
+                        )
+                    )
+                )
+        )
     }
 }
