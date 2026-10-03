@@ -89,53 +89,6 @@ fun Tugas(modifier: Modifier = Modifier) {
                 contentDescription = "Logo Mount Prau",
                 modifier = Modifier.size(120.dp)
             )
-
-            Spacer(modifier = Modifier.height(24.dp))
-
-            // Text Label & Data Diri
-            Text(
-                text = "Nama",
-                color = Color.Red,
-                fontSize = 18.sp,
-                fontWeight = FontWeight.SemiBold,
-                letterSpacing = 3.sp
-            )
-            Text(
-                text = "Muhammad Randyano",
-                color = Color.Blue,
-                fontSize = 22.sp,
-                fontWeight = FontWeight.Bold
-            )
-            Text(
-                text = "20240140271",
-                color = Color.White,
-                fontSize = 30.sp,
-                fontWeight = FontWeight.ExtraBold
-            )
-
-            Spacer(modifier = Modifier.height(20.dp))
-
-            // 3. Foto Diri dalam bentuk Lingkaran
-            FotoProfil()
         }
     }
-}
-
-// Fungsi Composable untuk Menampilkan Foto Profil Bulat
-@Composable
-fun FotoProfil() {
-    Image(
-        painter = painterResource(id = R.drawable.foto_profil),
-        contentDescription = "Foto Profil Muhammad Randyano",
-        modifier = Modifier
-            .size(240.dp)
-            .clip(CircleShape), // Membuat gambar berbentuk bulat/lingkaran penuh
-        contentScale = ContentScale.Crop
-    )
-}
-
-@Preview(showBackground = true, showSystemUi = true)
-@Composable
-fun TugasPreview() {
-    Tugas()
 }
