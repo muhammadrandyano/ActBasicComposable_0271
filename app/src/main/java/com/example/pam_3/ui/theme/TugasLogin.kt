@@ -27,3 +27,16 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.example.pam_3.R // Sesuaikan R dengan nama package project Anda
+
+@Composable
+fun Tugas(modifier: Modifier = Modifier) {
+    Box(modifier = modifier.fillMaxSize()) {
+        // 1. Gambar Background (Pemandangan Gunung)
+        Image(
+            painter = painterResource(id = R.drawable.bg_gunung),
+            contentDescription = "Background Gunung",
+            modifier = Modifier.fillMaxSize(),
+            contentScale = ContentScale.Crop
+        )
+    }
+}
