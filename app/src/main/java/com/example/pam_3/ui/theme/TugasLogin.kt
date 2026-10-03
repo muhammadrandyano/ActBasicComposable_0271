@@ -120,3 +120,16 @@ fun Tugas(modifier: Modifier = Modifier) {
         }
     }
 }
+
+// Fungsi Composable untuk Menampilkan Foto Profil Bulat
+@Composable
+fun FotoProfil() {
+    Image(
+        painter = painterResource(id = R.drawable.foto_profil),
+        contentDescription = "Foto Profil Muhammad Randyano",
+        modifier = Modifier
+            .size(240.dp)
+            .clip(CircleShape), // Membuat gambar berbentuk bulat/lingkaran penuh
+        contentScale = ContentScale.Crop
+    )
+}
